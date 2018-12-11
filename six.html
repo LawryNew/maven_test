@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .sixedge{
+            height: 208px;
+            width: 134px;
+            position: relative;
+            background-color: #FFF;
+            border-top: 1px solid green;
+            border-bottom: 1px solid green;
+            margin-left: 40%;
+            transform: rotate(90deg);
+        }
+        .sixedge:after{
+            content: '';
+            position: absolute;
+            background-color: transparent;
+            top: 33px;
+            right: -74px;
+            width: 151px;
+            height: 138px;
+            transform: rotate(45deg);
+            -ms-transform: rotate(45eg);
+            -moz-transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            border-top: 1px solid #000;
+            border-right: 1px solid #000;
+        }
+        
+        .sixedge:before{
+            content: '';
+    position: absolute;
+    background-color: transparent;
+    top: 32px;
+    left: -77px;
+    width: 148px;
+    height: 142px;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45eg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+        }
+        </style>
+</head>
+<body>
+    <div class="sixedge">six</div>
+</body>
+</html>
